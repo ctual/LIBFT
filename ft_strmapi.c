@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 18:06:35 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/12 18:23:35 by chtual           ###   ########.fr       */
+/*   Updated: 2017/12/19 19:16:32 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*strnew;
 	int		i;
 
-	strnew = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!(strnew = (char *)malloc(sizeof(char) * ft_strlen(s) + 1)))
+		return (NULL);
 	i = 0;
 	if (s == NULL || f == NULL)
 		return (NULL);

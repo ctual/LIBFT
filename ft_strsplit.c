@@ -6,13 +6,13 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/13 16:27:03 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/15 15:43:28 by chtual           ###   ########.fr       */
+/*   Updated: 2017/12/19 20:38:46 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char		**ft_alloc_table(char **table, char const *s, char c)
+static char		**ft_alloc_table(char **table, const char *s, char c)
 {
 	int		i;
 	int		words;
@@ -26,18 +26,18 @@ static char		**ft_alloc_table(char **table, char const *s, char c)
 		if (s[i] != c)
 		{
 			words++;
-			while (s[i] != c && s[i] != '\0')
+			while (s[i] != c && s[i])
 				i++;
 		}
 		else
 			i++;
 	}
-	if (!(table = (char **)ft_memalloc(sizeof(char *) * words + 1)))
-		return (NULL);
+	if (!(table = (char **)ft_memalloc(sizeof(char *) * (words + 1))))
+		return (0);
 	return (table);
 }
 
-static char		**ft_alloc_words(char **table, char const *s, char c)
+static char		**ft_alloc_words(char **table, const char *s, char c)
 {
 	int		i;
 	int		j;
@@ -48,25 +48,24 @@ static char		**ft_alloc_words(char **table, char const *s, char c)
 	letter = 0;
 	while (s[i] == c)
 		i++;
-	while (s[i++] != '\0')
+	while (s[i] != '\0')
 	{
-		while (s[i] != c && s[i] != '\0')
+		i++;
+		if (s[i] == c || !s[i])
 		{
-			i++;
-			letter++;
-			if (s[i + 1] == c || s[i + 1] == '\0')
-			{
-				if (!(table[j] = ft_strnew(letter + 1)))
-					return (NULL);
-				letter = 0;
-				j++;
-			}
+			if (!(table[j] = ft_strnew(letter + 1)))
+				return (0);
+			letter = 0;
+			j++;
+			while (s[i] == c)
+				i++;
 		}
+		letter++;
 	}
 	return (table);
 }
 
-static char		**ft_fill(char **table, char const *s, char c)
+static char		**ft_fill(char **table, const char *s, char c)
 {
 	int		i;
 	int		j;
@@ -82,7 +81,7 @@ static char		**ft_fill(char **table, char const *s, char c)
 		table[j][letter] = s[i];
 		letter++;
 		i++;
-		if (s[i] == c || s[i] == '\0')
+		if (s[i] == c || !s[i])
 		{
 			j++;
 			letter = 0;
@@ -97,13 +96,13 @@ char			**ft_strsplit(char const *s, char c)
 {
 	char	**table;
 
-	if (s == NULL)
+	if (!s)
 		return (NULL);
 	table = 0;
 	if (!(table = ft_alloc_table(table, s, c)))
-		return (NULL);
+		return (0);
 	if (!(table = ft_alloc_words(table, s, c)))
-		return (NULL);
+		return (0);
 	table = ft_fill(table, s, c);
 	return (table);
 }

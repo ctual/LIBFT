@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/13 15:57:34 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/13 16:26:42 by chtual           ###   ########.fr       */
+/*   Updated: 2017/12/19 20:00:54 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,28 @@
 
 char	*ft_strtrim(char const *s)
 {
-	char	*str;
+	char	*tmp;
 	int		i;
-	int		end;
+	int		j;
+	int		len;
 
-	i = 0;
-	if (s[i] == '\0')
+	if (!s)
 		return (NULL);
-	while (s[i] == ' ' || s[i] == ',' || s[i] == '\n' || s[i] == '\t')
+	if (!*s)
+		return (ft_strdup(""));
+	i = 0;
+	len = ft_strlen(s) - 1;
+	while (s[len] == ' ' || s[len] == '\n' || s[len] == '\t')
+		len--;
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
-	end = ft_strlen(s) - 1;
-	while (s[end] != ' ' || s[end] != ',' || s[end] != '\n' || s[end] != '\t')
-		end--;
-	str = (char *)malloc(sizeof(char) * (end - i));
-	while (i < end)
-	{
-		*str = s[i];
-		str++;
-		i++;
-	}
-	*str = '\0';
-	return (str);
+	if (i == (ft_strlen(s)))
+		return (ft_strdup(""));
+	if (!(tmp = ft_strnew((size_t)(len - i + 1))))
+		return (0);
+	j = 0;
+	while (i <= len)
+		tmp[j++] = s[i++];
+	tmp[j] = '\0';
+	return (tmp);
 }

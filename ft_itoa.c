@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/15 14:25:56 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/15 15:33:50 by chtual           ###   ########.fr       */
+/*   Updated: 2017/12/19 21:06:19 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,13 @@ char			*ft_itoa(int n)
 	len = len + neg;
 	if (!(str = (char *)malloc(sizeof(char) * len)))
 		return (NULL);
-	str[len - 1] = '\0';
-	while (len-- != 0)
+	str[--len] = '\0';
+	while (len--)
 	{
 		str[len] = n % 10 + '0';
 		n = n / 10;
 	}
-	if (neg == 1)
+	if (neg)
 		str[0] = '-';
 	return (str);
 }

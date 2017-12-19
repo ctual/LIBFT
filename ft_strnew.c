@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 18:00:47 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/18 17:52:39 by chtual           ###   ########.fr       */
+/*   Updated: 2017/12/19 19:09:53 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@ char	*ft_strnew(size_t size)
 	i = 0;
 	if (size == 0)
 		return (NULL);
-	str = (char *)malloc(sizeof(char) * size);
-	while (i < size)
+	if (!(str = (char *)malloc(sizeof(char) * size + 1)))
+		return (NULL);
+	while (i <= size)
 	{
 		str[i] = '\0';
 		i++;
