@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 15:15:21 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 21:09:49 by chtual           ###   ########.fr       */
+/*   Updated: 2018/01/04 17:00:15 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putnbr(int n)
 	{
 		ft_putchar('-');
 		ft_putchar('2');
-		ft_putnbr(147483648);
+		n = 147483648;
 	}
 	if (n < 0)
 	{
@@ -26,6 +26,10 @@ void	ft_putnbr(int n)
 		n = -n;
 	}
 	if (n >= 10)
+	{
 		ft_putnbr(n / 10);
-	ft_putchar((n % 10) + '0');
+		ft_putnbr(n % 10);
+	}
+	else
+		ft_putchar(n + '0');
 }

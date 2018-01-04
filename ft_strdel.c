@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 18:09:53 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/08 18:13:33 by chtual           ###   ########.fr       */
+/*   Updated: 2018/01/04 17:18:28 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_strdel(char **as)
 {
-	if (as != NULL || *as != NULL)
-	{
-		free(*as);
-		*as = NULL;
-	}
+	if (as == NULL)
+		return ;
+	ft_memdel((void **)as);
 }
