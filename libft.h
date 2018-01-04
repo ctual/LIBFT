@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 20:12:28 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 18:20:56 by chtual           ###   ########.fr       */
+/*   Updated: 2018/01/04 15:49:11 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
 int		ft_strlen(const char *str);
 void	ft_putchar(char c);
@@ -34,7 +35,7 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_strcmp(const char *s1, const char *s2);
-int		ft_strncmp(char *s1, char *s2, size_t len);
+int		ft_strncmp(const char *s1, const char *s2, size_t len);
 char	*ft_strdup(const char *str);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
