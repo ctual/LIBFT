@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 20:12:28 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/04 15:49:11 by chtual           ###   ########.fr       */
+/*   Updated: 2018/01/10 19:19:04 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t len);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strstr(char *str, char *substr);
-char	*ft_strnstr(char *str, char *substr, size_t len);
+char	*ft_strnstr(const char *str, const char *substr, size_t len);
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
