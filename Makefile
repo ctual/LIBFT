@@ -6,7 +6,7 @@
 #    By: chtual <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/15 15:58:48 by chtual            #+#    #+#              #
-#    Updated: 2017/12/18 17:51:25 by chtual           ###   ########.fr        #
+#    Updated: 2018/01/15 19:25:35 by chtual           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,20 +65,31 @@ SRC = 	ft_strlen.c\
 		ft_itoa.c\
 		ft_strjoin\.c\
 		ft_strsplit\.c\
+		ft_lstadd.c\
+		ft_lstdel.c\
+		ft_lstdelone.c\
+		ft_lstiter.c\
+		ft_lstmap.c\
+		ft_lstnew.c\
 
 OBJ = $(SRC:.c=.o)
 
 all : $(NAME)
 
 $(NAME) :
-	$(CC) $(FLAG) -c $(SRC) -I libft.h
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@$(CC) $(FLAG) -c $(SRC) -I libft.h
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
+	@make done
 
 clean :
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
+	@make done
 
 fclean : clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re : fclean all
+
+done :
+	@echo "DONE !"

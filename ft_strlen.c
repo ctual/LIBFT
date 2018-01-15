@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 20:13:46 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/10 18:35:53 by chtual           ###   ########.fr       */
+/*   Updated: 2017/12/05 20:32:54 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		ft_strlen(const char *str)
 	int		len;
 
 	len = 0;
-	while (str[len])
+	while (str[len] != '\0')
 		len++;
 	return (len);
 }

@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/08 16:36:51 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 18:07:30 by chtual           ###   ########.fr       */
+/*   Created: 2018/01/15 16:42:43 by chtual            #+#    #+#             */
+/*   Updated: 2018/01/15 18:06:36 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(char *str, char *substr, size_t len)
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	size_t	i;
-	size_t	j;
+	t_list		*head;
+	t_list		*nl;
 
-	i = 0;
-	if (substr[0] == '\0')
-		return ((char *)str);
-	while (i < len && str[i] != '\0')
+	if (!lst)
+		return (0);
+	if (!(nl = (t_list *)malloc(sizeof(t_list))))
+		return (NULL);
+	nl = f(lst);
+	head = nl;
+	lst = lst->next;
+	while (lst)
 	{
-		j = 0;
-		while (str[i + j] == substr[j] && (i + j) < len && str[i + j])
-			j++;
-		if (substr[j] == '\0')
-			return ((char *)(&str[i]));
-		i++;
+		nl->next = f(lst);
+		nl = nl->next;
+		lst = lst->next;
 	}
-	return (NULL);
+	return (head);
 }

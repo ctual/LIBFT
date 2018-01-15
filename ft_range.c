@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/08 16:36:51 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 18:07:30 by chtual           ###   ########.fr       */
+/*   Created: 2017/12/04 15:31:07 by chtual            #+#    #+#             */
+/*   Updated: 2017/12/04 18:49:55 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
-char	*ft_strnstr(char *str, char *substr, size_t len)
+int		*ft_range(int min, int max)
 {
-	size_t	i;
-	size_t	j;
+	int		range;
+	int		*tab;
+	int		j;
 
-	i = 0;
-	if (substr[0] == '\0')
-		return ((char *)str);
-	while (i < len && str[i] != '\0')
+	j = 0;
+	range = max - min;
+	if (range <= 0)
+		return (NULL);
+	tab = (int*)malloc(sizeof(*tab) * range);
+	while (min < max)
 	{
-		j = 0;
-		while (str[i + j] == substr[j] && (i + j) < len && str[i + j])
-			j++;
-		if (substr[j] == '\0')
-			return ((char *)(&str[i]));
-		i++;
+		tab[j] = min;
+		j++;
+		min++;
 	}
-	return (NULL);
+	return (tab);
 }

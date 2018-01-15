@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/08 16:36:51 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 18:07:30 by chtual           ###   ########.fr       */
+/*   Created: 2018/01/15 16:34:31 by chtual            #+#    #+#             */
+/*   Updated: 2018/01/15 17:12:19 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(char *str, char *substr, size_t len)
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	size_t	i;
-	size_t	j;
-
-	i = 0;
-	if (substr[0] == '\0')
-		return ((char *)str);
-	while (i < len && str[i] != '\0')
+	while (lst)
 	{
-		j = 0;
-		while (str[i + j] == substr[j] && (i + j) < len && str[i + j])
-			j++;
-		if (substr[j] == '\0')
-			return ((char *)(&str[i]));
-		i++;
+		f(lst);
+		lst = lst->next;
 	}
-	return (NULL);
 }

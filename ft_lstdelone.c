@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/08 16:36:51 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 18:07:30 by chtual           ###   ########.fr       */
+/*   Created: 2018/01/13 18:35:12 by chtual            #+#    #+#             */
+/*   Updated: 2018/01/13 19:03:22 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(char *str, char *substr, size_t len)
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	size_t	i;
-	size_t	j;
+	t_list	*list;
+	t_list	*tmp;
 
-	i = 0;
-	if (substr[0] == '\0')
-		return ((char *)str);
-	while (i < len && str[i] != '\0')
+	list = *alst;
+	if (list)
 	{
-		j = 0;
-		while (str[i + j] == substr[j] && (i + j) < len && str[i + j])
-			j++;
-		if (substr[j] == '\0')
-			return ((char *)(&str[i]));
-		i++;
+		tmp = list->next;
+		del(list, list->content_size);
+		list = tmp;
 	}
-	return (NULL);
+	*alst = 0;
 }
