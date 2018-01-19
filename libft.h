@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 20:12:28 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/15 20:09:54 by chtual           ###   ########.fr       */
+/*   Updated: 2018/01/19 16:23:15 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
-int					ft_strlen(const char *str);
+size_t				ft_strlen(const char *str);
 void				ft_putchar(char c);
 void				ft_putstr(char const *str);
 void				ft_putendl(char const *str);
@@ -63,8 +63,8 @@ char				*ft_strncat(char *dest, const char *src, size_t n);
 size_t				ft_strlcat(char *dest, const char *src, size_t len);
 char				*ft_strchr(const char *str, int c);
 char				*ft_strrchr(const char *str, int c);
-char				*ft_strstr(char *str, char *substr);
-char				*ft_strnstr(char *str, char *substr, size_t len);
+char				*ft_strstr(const char *str, const char *substr);
+char				*ft_strnstr(const char *str, const char *substr, size_t n);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 char				*ft_strnew(size_t size);

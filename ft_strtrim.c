@@ -6,7 +6,7 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/13 15:57:34 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 20:00:54 by chtual           ###   ########.fr       */
+/*   Updated: 2018/01/19 15:38:04 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 char	*ft_strtrim(char const *s)
 {
 	char	*tmp;
-	int		i;
-	int		j;
-	int		len;
+	size_t	i;
+	size_t	j;
+	size_t	len;
 
 	if (!s)
 		return (NULL);

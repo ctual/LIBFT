@@ -6,20 +6,20 @@
 /*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 16:09:59 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 17:34:46 by chtual           ###   ########.fr       */
+/*   Updated: 2018/01/19 16:38:53 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstr(char *str, char *substr)
+char	*ft_strstr(const char *str, const char *substr)
 {
 	int		i;
 	int		j;
 
 	i = 0;
 	if (substr[0] == '\0')
-		return (str);
+		return ((char *)str);
 	while (str[i] != '\0')
 	{
 		j = 0;
