@@ -3,12 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/13 16:27:03 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 20:38:46 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:59:17 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Alloue (avec malloc(3)) et retourne un tableau de chaines de
+caractères “fraiches” (toutes terminées par un ’\0’, le tableau
+également donc) résultant de la découpe de s selon le caractère
+c. Si l’allocation echoue, la fonction retourne NULL. Exemple :
+ft_strsplit("*salut*les***etudiants*", ’*’) renvoie
+le tableau ["salut", "les", "etudiants"].*/
 
 #include "libft.h"
 

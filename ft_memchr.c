@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 16:56:17 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/18 20:03:12 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:22:22 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*La fonction memchr() examine les n premiers octets de la zone mémoire pointée 
+par s à la recherche du caractère c. Le premier octet correspondant à c 
+(interprété comme un unsigned char) arrête l'opération.*/
 
 #include "libft.h"
 

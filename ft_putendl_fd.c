@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 19:04:37 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/18 17:47:40 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:30:19 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Ecrit la chaine s sur le descripteur de fichier fd suivi d’un
+’\n’.*/
 
 #include "libft.h"
 

@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/15 16:42:43 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/15 18:06:36 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:19:41 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Parcourt la liste lst en appliquant à chaque maillon la fonction
+f et crée une nouvelle liste “fraiche” avec malloc(3) ré-
+sultant des applications successives. Si une allocation échoue,
+la fonction renvoie NULL.*/
 
 #include "libft.h"
 

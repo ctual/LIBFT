@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 18:20:30 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/04 17:20:46 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:36:59 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Assigne la valeur ’\0’ à tous les caractères de la chaine passée
+en paramètre.*/
 
 #include "libft.h"
 

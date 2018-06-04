@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 16:32:33 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 18:39:33 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:13:53 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*vérifie si c est un char entrant dans le jeu de caractères ASCII.*/
 
 #include "libft.h"
 

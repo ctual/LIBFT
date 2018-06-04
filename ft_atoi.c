@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 15:46:36 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 18:21:00 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:07:23 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*La fonction atoi() convertit le début de la chaîne pointée par str
+ en entier de type int . */
 
 #include "libft.h"
 

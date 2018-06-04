@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 20:13:46 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/19 15:34:02 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:44:58 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*La fonction strlen() calcule la longueur de la chaîne de caractères s, 
+sans compter l'octet nul « \0 » final.  */
 
 #include "libft.h"
 

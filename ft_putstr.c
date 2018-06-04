@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 20:31:38 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/18 17:48:06 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:31:36 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Affiche la chaine s sur la sortie standard.*/
 
 #include "libft.h"
 

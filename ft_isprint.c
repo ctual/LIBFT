@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 16:57:04 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/19 18:39:52 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:15:03 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*vérifie s'il s'agit d'un caractère imprimable, y compris l'espace.*/
 
 #include "libft.h"
 

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 18:56:04 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/18 17:47:30 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:26:18 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Ecrit le caractère c sur le descripteur de fichier fd.*/
 
 #include "libft.h"
 

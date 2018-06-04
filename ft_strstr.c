@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 16:09:59 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/19 16:38:53 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:59:50 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*La fonction strstr() cherche la première occurrence de la sous-chaîne 
+aiguille au sein de la chaîne meule_de_foin. Les caractères « \0 » de fin 
+ne sont pas comparés.*/
 
 #include "libft.h"
 

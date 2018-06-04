@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 17:00:16 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/04 15:48:39 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:48:37 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*La fonction strncmp() est identique a strcmp sauf qu'elle ne compare que 
+les n (au plus) premiers caractères de s1 et s2.*/
 
 #include "libft.h"
 

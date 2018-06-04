@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 17:03:55 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/18 20:07:40 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:23:11 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*La fonction memcmp() compare les n premiers octets des zones mémoire s1 et s2. 
+Elle renvoie un entier inférieur, égal, ou supérieur à zéro, si s1 est 
+respectivement inférieure, égale ou supérieur à s2.  
+*/
 
 #include "libft.h"
 

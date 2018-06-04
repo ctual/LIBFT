@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 19:09:09 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/04 17:00:02 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:31:06 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Ecrit l’entier n sur le descripteur de fichier fd.*/
 
 #include "libft.h"
 

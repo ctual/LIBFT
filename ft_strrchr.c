@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 15:47:13 by chtual            #+#    #+#             */
-/*   Updated: 2017/12/08 16:00:34 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:58:57 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*La fonction strrchr() renvoie un pointeur sur la dernière occurrence 
+du caractère c dans la chaîne s.*/
 
 #include "libft.h"
 

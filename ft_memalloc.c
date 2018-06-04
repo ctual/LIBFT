@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtual <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 17:37:12 by chtual            #+#    #+#             */
-/*   Updated: 2018/01/04 17:35:06 by chtual           ###   ########.fr       */
+/*   Updated: 2018/04/26 00:20:39 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Alloue (avec malloc(3)) et retourne une zone de mémoire
+“fraiche”. La mémoire allouée est initialisée à 0. Si l’allocation
+échoue, la fonction renvoie NULL.*/
 
 #include "libft.h"
 
