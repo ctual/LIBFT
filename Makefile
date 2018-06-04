@@ -6,9 +6,16 @@
 #    By: chtual <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/15 15:58:48 by chtual            #+#    #+#              #
-#    Updated: 2018/01/15 19:25:35 by chtual           ###   ########.fr        #
+#    Updated: 2018/03/16 20:10:28 by chtual           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+.PHONY: all clean fclean re
+
+BASIC=\033[m
+GREEN=\033[32m
+RED=\033[31m
+ITALIC=\033[3m
 
 NAME = libft.a
 CC = gcc 
@@ -71,6 +78,8 @@ SRC = 	ft_strlen.c\
 		ft_lstiter.c\
 		ft_lstmap.c\
 		ft_lstnew.c\
+		ft_error.c\
+		ft_free_all.c\
 
 OBJ = $(SRC:.c=.o)
 
@@ -80,16 +89,14 @@ $(NAME) :
 	@$(CC) $(FLAG) -c $(SRC) -I libft.h
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
-	@make done
+	@echo "$(GREEN)Libft:\t\tCompilation ..\tPret!$(BASIC)"
 
 clean :
 	@rm -f $(OBJ)
-	@make done
 
 fclean : clean
 	@rm -f $(NAME)
+	@echo "Libft:\t\t$(ITALIC)Suppression de la librairie :\tlibft.a$(BASIC)"
 
 re : fclean all
 
-done :
-	@echo "DONE !"
