@@ -6,12 +6,14 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 15:38:51 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:25:25 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:37:33 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction memset() remplit les n premiers octets de la zone mémoire 
-pointée par s avec l'octet c.*/
+/*
+** La fonction memset() remplit les n premiers octets de la zone mémoire
+** pointée par s avec l'octet c.
+*/
 
 #include "libft.h"
 

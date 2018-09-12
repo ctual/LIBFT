@@ -6,11 +6,13 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 16:13:17 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:12:53 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:30:29 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*vérifie si l'on a un caractère alphabétique.*/
+/*
+** Vérifie si l'on a un caractère alphabétique.
+*/
 
 #include "libft.h"
 

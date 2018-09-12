@@ -6,13 +6,15 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 19:05:44 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:47:41 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:45:54 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction ft_strncat() est identique a ft_strcat(), à la différence que
-elle ne prend en compte que les n premiers caractères de src  et
-src n'a pas besoin d'octet nul final si elle contient n caractères ou plus.*/
+/*
+** La fonction ft_strncat() est identique a ft_strcat(), à la différence que
+** elle ne prend en compte que les n premiers caractères de src  et
+** src n'a pas besoin d'octet nul final si elle contient n caractères ou plus.
+*/
 
 #include "libft.h"
 

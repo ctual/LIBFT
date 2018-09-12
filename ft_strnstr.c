@@ -6,14 +6,16 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 16:36:51 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:58:23 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:57:46 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction strnstr () localise la première occurrence de la chaîne substr 
-dans la chaîne str, où pas plus de len caractères sont recherchés. 
-Les caractères qui apparaissent après un caractère `\ 0 'ne sont pas 
-recherchés.*/
+/*
+** La fonction strnstr () localise la première occurrence de la chaîne substr
+** dans la chaîne str, où pas plus de len caractères sont recherchés.
+** Les caractères qui apparaissent après un caractère `\ 0 'ne sont pas
+** recherchés.
+*/
 
 #include "libft.h"
 

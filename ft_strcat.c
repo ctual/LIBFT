@@ -6,14 +6,16 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 18:25:11 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:34:58 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:40:45 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction strcat() ajoute la chaîne src à la fin de la chaîne dest en
-écrasant le caractère nul (« \0 ») à la fin de dest, puis en ajoutant un nouveau 
-caractère nul final. Les chaînes ne doivent pas se chevaucher, et la chaîne dest
-doit être assez grande pour accueillir le résultat.*/
+/*
+** La fonction strcat() ajoute la chaîne src à la fin de la chaîne dest en
+** écrasant le caractère nul (« \0 ») à la fin de dest, puis en ajoutant un
+** nouveau caractère nul final. Les chaînes ne doivent pas se chevaucher, et
+** la chaîne dest doit être assez grande pour accueillir le résultat.
+*/
 
 #include "libft.h"
 

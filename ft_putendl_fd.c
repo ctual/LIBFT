@@ -6,12 +6,13 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 19:04:37 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:30:19 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:38:43 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Ecrit la chaine s sur le descripteur de fichier fd suivi d’un
-’\n’.*/
+/*
+** Ecrit la chaine s sur le descripteur de fichier fd suivi d’un ’\n’.
+*/
 
 #include "libft.h"
 

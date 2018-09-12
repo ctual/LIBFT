@@ -6,14 +6,16 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 17:23:33 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:45:30 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:45:16 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Applique la fonction f à chaque caractère de la chaine de caractères
-passée en paramètre pour créer une nouvelle chaine
-“fraiche” (avec malloc(3)) résultant des applications successives
-de f.*/
+/*
+** Applique la fonction f à chaque caractère de la chaine de caractères
+** passée en paramètre pour créer une nouvelle chaine
+** “fraiche” (avec malloc(3)) résultant des applications successives
+** de f.
+*/
 
 #include "libft.h"
 

@@ -6,16 +6,18 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/13 15:28:44 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 01:00:12 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:55:56 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Alloue (avec malloc(3)) et retourne la copie “fraiche” d’un
-tronçon de la chaine de caractères passée en paramètre. Le
-tronçon commence à l’index start et à pour longueur len. Si
-start et len ne désignent pas un tronçon de chaine valide,
-le comportement est indéterminé. Si l’allocation échoue, la
-fonction renvoie NULL.*/
+/*
+** Alloue (avec malloc(3)) et retourne la copie “fraiche” d’un
+** tronçon de la chaine de caractères passée en paramètre. Le
+** tronçon commence à l’index start et à pour longueur len. Si
+** start et len ne désignent pas un tronçon de chaine valide,
+** le comportement est indéterminé. Si l’allocation échoue, la
+** fonction renvoie NULL.
+*/
 
 #include "libft.h"
 

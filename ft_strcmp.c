@@ -6,13 +6,15 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 16:45:52 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:37:46 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:59:14 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction strcmp() compare les deux chaînes s1 et s2. 
-Elle renvoie un entier négatif, nul, ou positif, si s1 est respectivement 
-inférieure, égale ou supérieure à s2.*/
+/*
+** La fonction strcmp() compare les deux chaînes s1 et s2.
+** Elle renvoie un entier négatif, nul, ou positif, si s1 est respectivement
+** inférieure, égale ou supérieure à s2.
+*/
 
 #include "libft.h"
 

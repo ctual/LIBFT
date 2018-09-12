@@ -6,13 +6,15 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 17:37:12 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:20:39 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:34:26 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Alloue (avec malloc(3)) et retourne une zone de mémoire
-“fraiche”. La mémoire allouée est initialisée à 0. Si l’allocation
-échoue, la fonction renvoie NULL.*/
+/*
+** Alloue (avec malloc(3)) et retourne une zone de mémoire
+** “fraiche”. La mémoire allouée est initialisée à 0. Si l’allocation
+** échoue, la fonction renvoie NULL.
+*/
 
 #include "libft.h"
 

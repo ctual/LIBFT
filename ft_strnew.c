@@ -6,14 +6,16 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 18:00:47 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:52:29 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:54:24 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Alloue (avec malloc(3)) et retourne une chaine de caractère
-“fraiche” terminée par un ’\0’. Chaque caractère de la chaine
-est initialisé à ’\0’. Si l’allocation echoue, la fonction renvoie
-NULL.*/
+/*
+** Alloue (avec malloc(3)) et retourne une chaine de caractère
+** “fraiche” terminée par un ’\0’. Chaque caractère de la chaine
+** est initialisé à ’\0’. Si l’allocation echoue, la fonction renvoie
+** NULL.
+*/
 
 #include "libft.h"
 

@@ -6,12 +6,14 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 16:20:50 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:21:26 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 17:01:07 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction memccpy() copie au plus n octets de la zone mémoire src vers la 
-zone mémoire dest, s'arrêtant dès qu'elle rencontre le caractère c.  */
+/*
+** La fonction memccpy() copie au plus n octets de la zone mémoire src vers la
+** zone mémoire dest, s'arrêtant dès qu'elle rencontre le caractère c.
+*/
 
 #include "libft.h"
 

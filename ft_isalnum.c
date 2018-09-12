@@ -6,12 +6,13 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 16:28:11 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:12:18 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:30:12 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*vérifie si l'on a un caractère alphanumérique.*/
-
+/*
+** vérifie si l'on a un caractère alphanumérique.
+*/
 #include "libft.h"
 
 int		ft_isalnum(int c)

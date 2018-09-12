@@ -6,14 +6,16 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/15 14:25:56 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:16:56 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:31:39 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Alloue (avec malloc(3)) et retourne une chaine de caractères
-“fraiche” terminée par un ’\0’ représentant l’entier n passé
-en paramètre. Les nombres négatifs doivent être gérés. Si l’allocation
-échoue, la fonction renvoie NULL.*/
+/*
+** Alloue (avec malloc(3)) et retourne une chaine de caractères
+** “fraiche” terminée par un ’\0’ représentant l’entier n passé
+** en paramètre. Les nombres négatifs doivent être gérés. Si l’allocation
+** échoue, la fonction renvoie NULL.
+*/
 
 #include "libft.h"
 

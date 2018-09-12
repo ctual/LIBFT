@@ -6,11 +6,13 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/06 15:15:21 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:30:45 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:38:56 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Affiche l’entier n sur la sortie standard.*/
+/*
+** Affiche l’entier n sur la sortie standard.
+*/
 
 #include "libft.h"
 

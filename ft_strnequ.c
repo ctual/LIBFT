@@ -6,13 +6,15 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 18:37:28 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:52:11 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:47:27 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*n Compare lexicographiquement s1 et s2 jusqu’à n caractères
-maximum ou bien qu’un ’\0’ ait été rencontré. Si les deux
-chaines sont égales, la fonction retourne 1, ou 0 sinon*/
+/*
+** n Compare lexicographiquement s1 et s2 jusqu’à n caractères
+** maximum ou bien qu’un ’\0’ ait été rencontré. Si les deux
+** chaines sont égales, la fonction retourne 1, ou 0 sinon
+*/
 
 #include "libft.h"
 

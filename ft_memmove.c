@@ -6,12 +6,14 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 16:30:20 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:09:16 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:37:15 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction memmove() copie n octets depuis la zone mémoire src vers la zone 
-mémoire dest.*/
+/*
+** La fonction memmove() copie n octets depuis la zone mémoire src vers la zone
+** mémoire dest.
+*/
 
 #include "libft.h"
 

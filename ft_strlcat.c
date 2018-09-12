@@ -6,13 +6,15 @@
 /*   By: chtual <chtual@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/04 17:26:34 by chtual            #+#    #+#             */
-/*   Updated: 2018/04/26 00:44:35 by chtual           ###   ########.fr       */
+/*   Updated: 2018/06/05 16:44:34 by chtual           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction strcat () ajoute la chaîne terminée par NULL src à la fin de dst. 
-Il ajoutera au plus size - strlen (dst) - 1 octets, terminant le résultat par 
-NULL.*/
+/*
+** La fonction strcat () ajoute la chaîne terminée par NULL src à la fin de dst
+** Il ajoutera au plus size - strlen (dst) - 1 octets, terminant le résultat
+** par NULL.
+*/
 
 #include "libft.h"
 
